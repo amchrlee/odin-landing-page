@@ -2,7 +2,6 @@ body {
     font-family: Roboto, Helvetica Neue, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100;
 }
 
 header, .top-section, footer {
@@ -10,7 +9,7 @@ header, .top-section, footer {
 }
 
 header {
-    padding: 20px 0;
+    padding: 20px;
 }
 
 ul {
@@ -48,6 +47,10 @@ ul {
     justify-content: space-between;
 }
 
+.top-sect-text {
+    max-width: 50%;
+}
+
 h1 {
     color: #f9faf8;
     font-size: 48px;
@@ -62,11 +65,15 @@ button {
     color: #e5e7eb;
 }
 
+.top-section > img {
+    max-height: inherit;
+}
+
 h2 {
     color: #1f2937;
     font-size: 36px;
     margin: 0;
-    padding: 0;
+    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,21 +81,31 @@ h2 {
 
 .rand-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 150;
-    width: 150;
     margin: 0;
     padding: 0;
+    gap: 25px;
+}
+
+.rand-indiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150px;
 }
 
 .rand-indiv > img {
     border-radius: 15%;
 }
 
-.rand-indiv > p {
+.rand-indiv > div {
     font-size: 10px;
     color: #83878d;
+    text-align: center;
+    margin: 5px;
 }
 
 .quote {
@@ -96,7 +113,19 @@ h2 {
     color: #1f2937;
     font-size: 36px;
     font-style: italic;
-    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote span {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+    font-size: 18px;
 }
 
 .call-to-action {
