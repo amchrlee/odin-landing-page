@@ -4,12 +4,22 @@ body {
     padding: 0;
 }
 
-header, .top-section, footer {
+header, #about, footer {
     background-color: #1f2937;
 }
 
 header {
-    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 24px 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 ul {
@@ -18,12 +28,14 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: 25px;
 }
 
 .logo {
     color: #f9faf8;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 900;
+    font-family: 'Righteous', cursive;
 }
 
 .header-links {
@@ -40,22 +52,27 @@ ul {
     padding: 0;
 }
 
-.top-section {
+#about {
     margin: 0;
-    padding: 15px 0;
+    padding: 45px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
 }
 
 .top-sect-text {
-    max-width: 50%;
+    max-width: 35%;
 }
 
 h1 {
     color: #f9faf8;
     font-size: 48px;
-    margin: 0;
-    padding: 0;
+    margin: 15px 0;
+}
+
+div > .secondary-text {
+    margin: 15px 0;
 }
 
 button {
@@ -65,25 +82,29 @@ button {
     color: #e5e7eb;
 }
 
-.top-section > img {
-    max-height: inherit;
+#about > img {
+    max-width: 40%;
+}
+
+#rand-info {
+    padding: 90
 }
 
 h2 {
     color: #1f2937;
     font-size: 36px;
-    margin: 0;
-    padding: 25px;
+    margin: 25px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rand-info {
+.rand-info-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 25px;
     padding: 0;
     gap: 25px;
 }
