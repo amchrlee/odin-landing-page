@@ -28,21 +28,24 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 25px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+a:hover {
+    color: #83878d;
 }
 
 .logo {
     color: #f9faf8;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 900;
     font-family: 'Righteous', cursive;
-}
-
-.header-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
 }
 
 .secondary-text {
@@ -71,22 +74,34 @@ h1 {
     margin: 15px 0;
 }
 
+.top-sect-sub-text {
+    color: #e5e7eb;
+    font-size: 24px;
+    font-weight: 600;
+}
+
 div > .secondary-text {
     margin: 15px 0;
 }
 
-button {
+.top-sect-text > button {
     border: none;
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: #3882f6;
-    color: #e5e7eb;
+    color: #f9faf8;;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+.top-sect-text > button:hover {
+    background-color: #3881f6b7;
 }
 
 #about > img {
     max-width: 40%;
 }
 
-#rand-info {
+.rand-info {
     padding: 90
 }
 
@@ -106,7 +121,7 @@ h2 {
     align-items: center;
     margin: 25px;
     padding: 0;
-    gap: 25px;
+    gap: 15px;
 }
 
 .rand-indiv {
@@ -115,15 +130,17 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 150px;
+    width: 25%;
 }
 
 .rand-indiv > img {
     border-radius: 15%;
+    max-width: 80%;
+    max-height: 100vh;
 }
 
 .rand-indiv > div {
-    font-size: 10px;
+    font-size: 16px;
     color: #83878d;
     text-align: center;
     margin: 5px;
@@ -132,7 +149,7 @@ h2 {
 .quote {
     background-color: #e5e7eb;
     color: #1f2937;
-    font-size: 36px;
+    font-size: 28px;
     font-style: italic;
     padding: 20px;
     display: flex;
@@ -144,24 +161,37 @@ blockquote span {
     display: block;
     font-style: normal;
     font-weight: bold;
-    margin: 0;
+    margin: 8px 0;
     text-align: right;
     font-size: 18px;
 }
 
-.call-to-action {
+.contact {
     background-color: #3882f6;
     color: #f9faf8;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-.call {
-    flex: 1;
-    margin: 0;
+.contact-text > h3 {
+    font-size: 24px;
+    margin: 0 0 8px 0;
     padding: 0;
+}
+
+.contact > button {
+    border-style: solid;
+    border-color: #f9faf8;
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 10px 30px;
+    font-size: 16px;
 }
 
 footer {
